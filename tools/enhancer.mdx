@@ -1,0 +1,545 @@
+---
+title: "Enhancer"
+description: "Improve both images and videos — sharpening details, upscaling resolution, and refining style or motion"
+---
+
+The Enhancer Tool lets you improve both images and videos — sharpening details, upscaling resolution, and refining style or motion. It works with any file from your Assets or uploads from your device.
+
+## How to Enhance (Quick Flow for Beginners)
+
+<Steps>
+  <Step title="Upload or Select">
+    Upload or select an image or video.
+  </Step>
+  
+  <Step title="Pick Your Upscaler">
+    Choose from:
+    - **Krea Video (basic)** → faster, lighter, up to 4K / 40s
+    - **Topaz Video (advanced)** → professional-grade, up to 8K / 60s, higher compute
+    - **Image Enhancer** → up to 22K for still images
+  </Step>
+  
+  <Step title="Choose Enhancement Model">
+    Select the appropriate model for your content (see table below).
+  </Step>
+  
+  <Step title="Frame Interpolation (Optional)">
+    Turn on Frame Interpolation for smoother motion (30–120 fps).
+  </Step>
+  
+  <Step title="Enhance">
+    Click Enhance → download or send to another tool.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/enhancer-interface-basic.png" alt="Enhancer interface showing basic options" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Enhancer interface showing basic options
+</Note>
+
+## Image Enhancement Options
+
+<AccordionGroup>
+  <Accordion title="Resolution">
+    Set width × height (up to 22K).
+  </Accordion>
+  
+  <Accordion title="Prompt">
+    Guide enhancement with text (e.g., "make this cinematic").
+  </Accordion>
+  
+  <Accordion title="Strength">
+    Control how strong the AI modifies the image.
+  </Accordion>
+  
+  <Accordion title="Resemblance">
+    Adjust how close it stays to the original.
+  </Accordion>
+  
+  <Accordion title="Clarity & Sharpness">
+    Sharpen details and edges.
+  </Accordion>
+  
+  <Accordion title="Match Color">
+    Preserve original tones.
+  </Accordion>
+  
+  <Accordion title="Presets">
+    Default, Flat Sharp, Strong, Oil Painting, Digital Art, Reinterpretation.
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/image-enhancement-panel.png" alt="Image enhancement panel" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Image enhancement panel
+</Note>
+
+## Video Enhancement Options
+
+### Upscalers
+
+<CardGroup cols={2}>
+  <Card title="Krea Video (Basic)" icon="bolt">
+    Simpler panel with prompt, AI strength, FPS options, loop toggle.
+  </Card>
+  
+  <Card title="Topaz Video (Advanced)" icon="star">
+    Full panel with professional controls (models, focus fix, noise reduction, interpolation).
+  </Card>
+</CardGroup>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <Frame>
+    <img src="/images/tools/krea-video-panel.png" alt="Krea Video panel" />
+  </Frame>
+  
+  <Frame>
+    <img src="/images/tools/topaz-video-panel.png" alt="Topaz Video panel" />
+  </Frame>
+</div>
+
+<Note>
+**Screenshot placeholders:** Krea Video panel + Topaz Video panel
+</Note>
+
+## Enhancement Models
+
+<div className="flex justify-center items-center w-full my-8">
+  <div className="w-full max-w-4xl mx-auto">
+
+| Model | **Best For** | **Notes** |
+|-------|:------------:|:---------:|
+| **Artemis** | General enhancement | Balanced detail + speed |
+| **Gaia** | Low-res footage | Adds detail, can invent texture |
+| **Iris** | Faces & People | Best for interviews, portraits |
+| **Nyx** | Low-light videos | Reduces noise, improves shadows |
+| **Proteus** | Pro users | Manual tuning of sharpness, noise, etc |
+| **Rhea** | Motion footage | Smooths jitter, stabilizes |
+| **Theia** | Auto Mode | Adapts to any content, "set and forget" |
+
+  </div>
+</div>
+
+<Frame>
+  <img src="/images/tools/enhancement-model-dropdown.png" alt="Enhancement model dropdown" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Enhancement model dropdown
+</Note>
+
+## Frame Interpolation Models
+
+<div className="flex justify-center items-center w-full my-8">
+  <div className="w-full max-w-4xl mx-auto">
+
+| Model | **Best For** | **Notes** |
+|-------|:------------:|:---------:|
+| **Apollo** | Smooth motion | Highest quality |
+| **Apollo Fast** | Speed | Faster, less precise |
+| **Chronos** | Slow motion | Best for 2x-4x slowdowns |
+| **Chronos Fast** | Quick Slo-mo | Faster, slightly less accurate |
+| **Chronos Slo-Mo / FPS Conversion** | Frame rate conversion | Convert 24 → 60 fps, etc |
+
+  </div>
+</div>
+
+<Frame>
+  <img src="/images/tools/frame-interpolation-dropdown.png" alt="Frame Interpolation dropdown" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Frame Interpolation dropdown
+</Note>
+
+## Actions After Enhancement
+
+<CardGroup cols={2}>
+  <Card title="Download" icon="download">
+    Save result locally
+  </Card>
+  
+  <Card title="Retry/Reuse" icon="refresh">
+    Generate again with same settings
+  </Card>
+  
+  <Card title="Delete" icon="trash">
+    Remove unwanted results
+  </Card>
+  
+  <Card title="Organize" icon="heart">
+    Like / Dislike / Favorite to organize
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Image Upscaling">
+    For images, upscale step-by-step (4K → 8K → 22K) for the cleanest results.
+  </Accordion>
+  
+  <Accordion title="Video Frame Rates">
+    For videos, use Frame Interpolation 60 fps for smoothness, 90–120 fps for slow motion.
+  </Accordion>
+  
+  <Accordion title="Fix Flickering">
+    Enable Fix Duplicate Frames if you see flickering.
+  </Accordion>
+  
+  <Accordion title="Cinematic Look">
+    Add Grain for a more natural cinematic feel.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Extended Flow for Pro Users
+
+### Main Components
+
+<CardGroup cols={2}>
+  <Card title="Upload/Select File" icon="upload">
+    Choose an image or video from Assets or upload new
+  </Card>
+  
+  <Card title="Enhancement Settings" icon="sliders">
+    Adjust clarity, resemblance, sharpness, or motion
+  </Card>
+  
+  <Card title="Upscale" icon="expand">
+    Increase resolution (images up to 22K, videos up to 8K)
+  </Card>
+  
+  <Card title="Style & Prompts" icon="palette">
+    Apply presets or add a descriptive prompt for refinement
+  </Card>
+  
+  <Card title="Generate Button" icon="play">
+    Apply the enhancement
+  </Card>
+  
+  <Card title="Download Options" icon="download">
+    Save the result or send it to other tools
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/enhancer-interface-pro.png" alt="Enhancer interface with main controls labeled" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Enhancer interface with main controls labeled
+</Note>
+
+### Advanced Image Enhancement Options
+
+<AccordionGroup>
+  <Accordion title="Resolution">
+    Set custom width × height, up to 22K.
+  </Accordion>
+  
+  <Accordion title="Prompt">
+    Describe how you want the image refined (optional).
+  </Accordion>
+  
+  <Accordion title="AI Strength">
+    Controls how much enhancement is applied.
+  </Accordion>
+  
+  <Accordion title="Resemblance">
+    Adjusts how close the output stays to the original.
+  </Accordion>
+  
+  <Accordion title="Clarity">
+    Sharpen fine details.
+  </Accordion>
+  
+  <Accordion title="Sharpness">
+    Adds crispness and edge detail.
+  </Accordion>
+  
+  <Accordion title="Match Color">
+    Preserves the original color palette.
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/image-enhancement-settings-pro.png" alt="Image enhancement settings panel" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Image enhancement settings panel
+</Note>
+
+## Video Upscaler Models
+
+### Topaz Video
+
+<Accordion title="Topaz Video (Professional-Grade)">
+  - **Industry-grade AI upscaler** integrated into Krea
+  - **Supports up to 8K resolution** and clips up to 60 seconds
+  - **Adds frames, grain, and focus fixes** with high fidelity
+  - **Labeled as an expensive model** because it consumes more compute
+  - **Best for professional / production-quality footage**
+</Accordion>
+
+### Krea Video
+
+<Accordion title="Krea Video (Native Generative)">
+  - **Krea's native generative upscaler**
+  - **Supports up to 4K resolution** and clips up to 40 seconds
+  - **Focuses on adding new details** and improving visual quality
+  - **Faster and lighter than Topaz**, better for everyday or creative work
+</Accordion>
+
+## Krea Video (Basic Upscaler)
+
+Krea's built-in video upscaler is designed for quick, lightweight enhancements with creative flexibility. It's less advanced than Topaz but faster and consumes fewer compute credits.
+
+### Options Include:
+
+<AccordionGroup>
+  <Accordion title="Upscaling Factor">
+    1×, 2×, or Max
+  </Accordion>
+  
+  <Accordion title="FPS Settings">
+    30, 60, or 120 fps
+  </Accordion>
+  
+  <Accordion title="Prompt Input">
+    Guide the upscaler with text (e.g., "cinematic aesthetic, fashion editorial shot")
+  </Accordion>
+  
+  <Accordion title="AI Strength">
+    Adjust how strongly the AI modifies the video
+  </Accordion>
+  
+  <Accordion title="Resemblance">
+    Balance between original look and enhanced detail
+  </Accordion>
+  
+  <Accordion title="Presets">
+    Quick styles like Cinematic
+  </Accordion>
+  
+  <Accordion title="Loop Toggle">
+    Make the output seamlessly loop
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/krea-video-upscaler-panel.png" alt="Krea Video upscaler panel" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Krea Video upscaler panel
+</Note>
+
+## Topaz Video (Advanced Upscaler)
+
+Topaz Video is a professional-grade model with more advanced parameters for detail restoration and artifact correction.
+
+### Key Features:
+- **Supports up to 8K resolution** and clips up to 60s
+- **Includes advanced controls** (model selection: Artemis, Gaia, Proteus, etc.)
+- **Offers Focus Fix, Noise Reduction, and Frame Interpolation** options
+- **Consumes more compute**, labeled as an expensive model
+- **Best for professional work** or footage requiring maximum fidelity
+
+<Frame>
+  <img src="/images/tools/topaz-video-enhancement-panel.png" alt="Topaz Video enhancement panel" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Topaz Video enhancement panel
+</Note>
+
+### Video Enhancement Options for Topaz
+
+<AccordionGroup>
+  <Accordion title="Basic Settings">
+    - **Resolution** → Set target resolution (up to 8K)
+    - **Enhancement toggle** → Enable/disable AI video enhancement
+    - **Video Type** → Progressive or other modes
+    - **Model** → Choose model for frame enhancement (e.g., Proteus)
+    - **Focus Fix** → Corrects blur in selected areas
+    - **Parameters** → Auto or manual settings
+  </Accordion>
+  
+  <Accordion title="Frame Interpolation">
+    - **Frame Interpolation** → Toggle ON to generate smoother motion at 30/60/90/120 fps
+    - **Model** (e.g., Apollo) controls interpolation style
+    - **Slow Motion** → Adjust playback speed (e.g., 1× → 0.5×)
+  </Accordion>
+  
+  <Accordion title="Advanced Options">
+    - **Fix Duplicate Frames** → Removes repeated frames
+    - **Sensitivity** → Controls how aggressively duplicates are detected
+    - **Grain toggle** → Adds subtle film grain for realism
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/video-enhancement-frame-interpolation.png" alt="Video enhancement panel with Frame Interpolation expanded" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Video enhancement panel with Frame Interpolation expanded
+</Note>
+
+## Video Enhancement Models (Detailed)
+
+<AccordionGroup>
+  <Accordion title="Artemis">
+    **Designed for general video enhancement.**
+    
+    - Good for removing noise, sharpening, and restoring overall detail
+    - Balanced between speed and quality
+  </Accordion>
+  
+  <Accordion title="Gaia">
+    **Focuses on maximizing detail and adding texture.**
+    
+    - Best for upscaling low-resolution videos
+    - May introduce stronger AI-generated detail (less faithful to the original)
+  </Accordion>
+  
+  <Accordion title="Iris">
+    **Specialized in enhancing faces and people.**
+    
+    - Works well for interviews, vlogs, or any footage where human features are the focus
+  </Accordion>
+  
+  <Accordion title="Nyx">
+    **Optimized for low-light or dark footage.**
+    
+    - Reduces noise and preserves shadow detail
+  </Accordion>
+  
+  <Accordion title="Proteus">
+    **The most flexible, with tunable parameters.**
+    
+    - Adjustable sharpness, noise reduction
+    - Great for fine-tuning depending on your footage
+    - Often considered the "pro" choice for users who want control
+  </Accordion>
+  
+  <Accordion title="Rhea">
+    **Focused on stability and smoothness.**
+    
+    - Good for footage with lots of camera movement
+    - Reduces jitter and motion artifacts
+  </Accordion>
+  
+  <Accordion title="Theia">
+    **A hybrid model that adapts automatically to the content.**
+    
+    - Tries to balance detail, sharpness, and noise reduction without heavy manual tweaking
+    - Good for users who want a "smart auto" option
+  </Accordion>
+</AccordionGroup>
+
+## Frame Interpolation Models (Detailed)
+
+<AccordionGroup>
+  <Accordion title="Apollo">
+    **High-quality frame interpolation model.**
+    
+    - Produces smooth motion while preserving detail and minimizing artifacts
+    - Best for general use when quality matters more than speed
+  </Accordion>
+  
+  <Accordion title="Apollo Fast">
+    **A faster version of Apollo.**
+    
+    - Sacrifices some accuracy for quicker renders
+    - Useful for previews or when speed is more important than perfection
+  </Accordion>
+  
+  <Accordion title="Chronos">
+    **Specialized in creating new frames for slow motion effects.**
+    
+    - Works best when slowing down footage by 2×, 4×, or more
+    - Preserves temporal consistency better than Apollo
+  </Accordion>
+  
+  <Accordion title="Chronos Fast">
+    **Faster variant of Chronos with reduced detail accuracy.**
+    
+    - Good for quick drafts or less demanding footage
+  </Accordion>
+  
+  <Accordion title="Chronos Slo-Mo / FPS Conversion">
+    **Advanced version of Chronos built for precise frame rate conversion.**
+    
+    - Converts between arbitrary FPS (e.g., 24 → 60 fps) while keeping motion fluid
+    - Ideal for cinematic footage or preparing clips for broadcast requirements
+  </Accordion>
+</AccordionGroup>
+
+## Downloads & Actions
+
+<CardGroup cols={2}>
+  <Card title="Download" icon="download">
+    Save image or video locally
+  </Card>
+  
+  <Card title="Retry/Reuse Parameters" icon="refresh">
+    Generate again with same settings
+  </Card>
+  
+  <Card title="Delete" icon="trash">
+    Delete unwanted results
+  </Card>
+  
+  <Card title="Organize" icon="heart">
+    Like / Dislike / Favorite to organize
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<Info>
+**Pro Tips for Best Results:**
+
+- **For images**: Upscale step by step (4K → 8K → 22K) to preserve fidelity
+- **For videos**: Use Frame Interpolation at 60 fps for smooth results; use 90–120 fps for slow motion
+- **Enable Fix Duplicate Frames** if you notice flickering or repeated frames
+- **Use Grain** for a more natural cinematic look in upscaled footage
+</Info>
+
+## Tutorials & Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Workflows" icon="book" href="/tutorials">
+    For workflows, see the Tutorials section
+  </Card>
+  
+  <Card title="Tips & Tricks" icon="lightbulb" href="/tutorials/tips-tricks">
+    For prompt tips and advanced tricks
+  </Card>
+</CardGroup>
+
+## Related Tools
+
+<CardGroup cols={3}>
+  <Card title="Image Tool" icon="image" href="/tools/image">
+    Generate images to enhance
+  </Card>
+  
+  <Card title="Video Tool" icon="video" href="/tools/video">
+    Generate videos to enhance
+  </Card>
+  
+  <Card title="Edit Tool" icon="edit" href="/tools/edit">
+    Advanced editing before enhancement
+  </Card>
+</CardGroup>

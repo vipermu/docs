@@ -1,0 +1,386 @@
+---
+title: "Video Tool"
+description: "Generate AI-driven video clips from text prompts, images, or start/end frames"
+---
+
+The Video Tool lets you generate AI-driven video clips from text prompts, images, or start/end frames. The menu changes slightly depending on which model you select.
+
+## Main Components
+
+<CardGroup cols={2}>
+  <Card title="Prompt Box" icon="pencil">
+    Describe the video you want to create
+  </Card>
+  
+  <Card title="Prompt Settings" icon="sliders">
+    Adjust model, resolution, aspect ratio, and style
+  </Card>
+  
+  <Card title="Start Frame" icon="image">
+    Upload an image to define the first frame of the video
+  </Card>
+  
+  <Card title="End Frame" icon="images">
+    (Only for supported models) upload an image to set the final frame
+  </Card>
+  
+  <Card title="Styles" icon="palette">
+    Apply a preset, community, or custom style
+  </Card>
+  
+  <Card title="Asset Manager" icon="folder">
+    View and organize your generated videos (top panel)
+  </Card>
+  
+  <Card title="Generate Button" icon="play">
+    Run the prompt and create video clips
+  </Card>
+  
+  <Card title="Download Options" icon="download">
+    Save your video
+  </Card>
+  
+  <Card title="Send to Tools" icon="arrow-right">
+    Forward a video into Enhancer, Restyle, or Motion Transfer
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/video-tool-interface.png" alt="Video Tool interface with components labeled" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Video Tool interface with components labeled
+</Note>
+
+## Detailed Breakdown
+
+### Prompt Box
+
+<Steps>
+  <Step title="Write Your Prompt">
+    Write your prompt to describe the scene or motion.
+  </Step>
+  
+  <Step title="Add Start Frame">
+    Combine text with a start frame to anchor the composition.
+  </Step>
+  
+  <Step title="Add End Frame (Optional)">
+    Some models support adding an end frame to smoothly transition between two visuals.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/video-prompt-box.png" alt="Prompt box with start and end frame options" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Prompt box with start and end frame options
+</Note>
+
+### Prompt Settings
+
+<AccordionGroup>
+  <Accordion title="Resolution">
+    Starts at 720p, higher options depend on the model.
+  </Accordion>
+  
+  <Accordion title="Upscale">
+    Final outputs can be enhanced up to 8K.
+  </Accordion>
+  
+  <Accordion title="Format">
+    Choose aspect ratio (landscape 16:9, portrait 9:16, square 1:1, etc.).
+  </Accordion>
+  
+  <Accordion title="Style Intensity">
+    Adjust how much influence the selected style has.
+  </Accordion>
+  
+  <Accordion title="Model Selection">
+    Pick from the list of video models (Kling, Veo, Seedance, Runway, etc.).
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/video-prompt-settings.png" alt="Prompt settings panel expanded" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Prompt settings panel expanded
+</Note>
+
+### Styles
+
+<CardGroup cols={3}>
+  <Card title="Default Styles" icon="star">
+    Use default styles to quickly shape the mood
+  </Card>
+  
+  <Card title="Community Styles" icon="users">
+    Explore community styles for shared looks
+  </Card>
+  
+  <Card title="Custom Styles" icon="brush">
+    Train and apply custom styles for consistent results across projects
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/video-styles-menu.png" alt="Styles menu with default + community styles" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Styles menu with default + community styles
+</Note>
+
+### Assets
+
+<Steps>
+  <Step title="Access Assets">
+    Access through the top bar or left menu.
+  </Step>
+  
+  <Step title="Automatic Storage">
+    All your generated videos are automatically stored.
+  </Step>
+  
+  <Step title="Send to Tools">
+    From here, send a video into other tools like Enhancer, Motion Transfer, or Restyle.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/video-assets-library.png" alt="Assets library with saved videos" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Assets library with saved videos
+</Note>
+
+## Downloads & Actions
+
+When you select a generated video, additional options appear:
+
+<AccordionGroup>
+  <Accordion title="Enhancement Actions">
+    - **Upscale** → Improve resolution (up to 8K)
+  </Accordion>
+  
+  <Accordion title="File Actions">
+    - **Download** → Save the video locally
+    - **Retry** → Re-run the prompt
+    - **Reuse parameters** → Start a new clip with the same settings
+  </Accordion>
+  
+  <Accordion title="Sharing Actions">
+    - **Share parameters** → Share prompt + settings
+  </Accordion>
+  
+  <Accordion title="Organization Actions">
+    - **Delete** → Remove the video
+    - **Like / Dislike / Favorite** → Organize and rate your results
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/video-action-menu.png" alt="Video action menu with upscale, retry, download, share, etc." />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Video action menu with upscale, retry, download, share, etc.
+</Note>
+
+## Menu Options
+
+<CardGroup cols={2}>
+  <Card title="Start Frame" icon="image">
+    Upload an image to use as the first frame of your video
+  </Card>
+  
+  <Card title="End Frame" icon="images">
+    (Only on some models) upload an image to define the last frame
+  </Card>
+  
+  <Card title="Style" icon="palette">
+    Apply a custom or preset style to keep consistency across frames
+  </Card>
+  
+  <Card title="Resolution" icon="monitor">
+    Select available output quality (starts at 720p, higher depending on the model)
+  </Card>
+  
+  <Card title="Format" icon="rectangle-wide">
+    Choose aspect ratio (landscape, square, vertical)
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/video-menu-options.png" alt="Video Tool menu with Start frame, End frame, Style, Resolution options" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Video Tool menu with Start frame, End frame, Style, Resolution options
+</Note>
+
+## Available Models
+
+Krea Video integrates a wide range of state-of-the-art models. Each differs in generation time, resolution, motion quality, and pricing:
+
+### High-Quality Motion Models
+
+<AccordionGroup>
+  <Accordion title="WAN 2.1 / WAN 2.2">
+    High-quality motion with strong prompt adherence.
+    
+    **Speed:** Medium | **Cost:** Medium
+    
+    [Learn more →](/ai-models/wan-video)
+  </Accordion>
+  
+  <Accordion title="Kling 1.0 / 1.6 / 2.0 / 2.1">
+    Cinematic, detailed, strong motion realism.
+    
+    **Speed:** Medium to slow | **Cost:** High
+    
+    [Learn more →](/ai-models/kling)
+  </Accordion>
+</AccordionGroup>
+
+### Google's Cinematic Models
+
+<AccordionGroup>
+  <Accordion title="Veo 2 / Veo 3 / Veo 3 Fast">
+    Google's cinematic video models.
+    
+    - **Veo 3:** Best quality. Slowest / High cost
+    - **Veo 3 Fast:** Faster alternative with slightly reduced detail
+    
+    [Learn more →](/ai-models/veo)
+  </Accordion>
+</AccordionGroup>
+
+### Fast & Experimental Models
+
+<AccordionGroup>
+  <Accordion title="Hailuo / Hailuo 2.0">
+    Smooth transitions, experimental style.
+    
+    **Speed:** Fast | **Cost:** Low
+    
+    [Learn more →](/ai-models/hailuo)
+  </Accordion>
+  
+  <Accordion title="Seedance Lite">
+    Quick, lightweight generation for drafts.
+    
+    **Speed:** Very fast | **Cost:** Lowest
+    
+    [Learn more →](/ai-models/seedance)
+  </Accordion>
+  
+  <Accordion title="Seedance Pro">
+    Higher fidelity version.
+    
+    **Speed:** Slower than Lite | **Cost:** Medium
+    
+    [Learn more →](/ai-models/seedance)
+  </Accordion>
+  
+  <Accordion title="01-Live">
+    Experimental real-time model.
+    
+    **Speed:** Fast | **Cost:** Experimental pricing
+    
+    [Learn more →](/ai-models/01-live)
+  </Accordion>
+</AccordionGroup>
+
+### Stylized & Creative Models
+
+<AccordionGroup>
+  <Accordion title="Pika 2.2">
+    Flexible, stylized videos with strong motion.
+    
+    **Speed:** Fast | **Cost:** Low
+    
+    [Learn more →](/ai-models/pika)
+  </Accordion>
+  
+  <Accordion title="Runway Gen 3 / Gen 4">
+    Cinematic storytelling, character-driven clips.
+    
+    **Speed:** Medium | **Cost:** Mid-to-high
+    
+    [Learn more →](/ai-models/runway-gen)
+  </Accordion>
+</AccordionGroup>
+
+### Balanced General-Purpose Models
+
+<AccordionGroup>
+  <Accordion title="Hunyuan">
+    Strong scene coherence, good general-purpose choice.
+    
+    **Speed:** Medium | **Cost:** Medium
+    
+    [Learn more →](/ai-models/hunyuan)
+  </Accordion>
+  
+  <Accordion title="Luma Ray 2">
+    Cinematic lighting and smooth transitions.
+    
+    **Speed:** Medium to slow | **Cost:** High
+    
+    [Learn more →](/ai-models/luma-ray)
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/video-model-comparison.gif" alt="Same prompt rendered across 3 different models (e.g., Kling 2.1 vs Veo 3 vs Runway Gen-4)" />
+</Frame>
+
+<Note>
+**GIF placeholder:** Same prompt rendered across 3 different models (e.g., Kling 2.1 vs Veo 3 vs Runway Gen-4)
+</Note>
+
+## Model Selection Guide
+
+<Info>
+**Choosing the Right Model:**
+
+- **For speed:** Seedance Lite, Hailuo, Pika 2.2
+- **For quality:** Kling 2.1, Veo 3, Luma Ray 2
+- **For experimentation:** 01-Live, Hailuo 2.0
+- **For cinematic results:** Runway Gen 4, Veo 3, Kling series
+- **For balanced results:** Hunyuan, WAN 2.2
+</Info>
+
+## Tutorials & Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Workflows" icon="book" href="/tutorials">
+    For workflows, see the Tutorials section
+  </Card>
+  
+  <Card title="Tips & Tricks" icon="lightbulb" href="/tutorials/tips-tricks">
+    For prompt tips and advanced tricks
+  </Card>
+</CardGroup>
+
+## Related Tools
+
+<CardGroup cols={3}>
+  <Card title="Image Tool" icon="image" href="/tools/image">
+    Generate still images and start frames
+  </Card>
+  
+  <Card title="Enhancer" icon="sparkles" href="/tools/enhancer">
+    Upscale your videos up to 8K
+  </Card>
+  
+  <Card title="Motion Transfer" icon="arrows-rotate" href="/tools/motion-transfer">
+    Apply motion from one video to another
+  </Card>
+</CardGroup>

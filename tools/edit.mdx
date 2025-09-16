@@ -1,0 +1,453 @@
+---
+title: "Edit Tool"
+description: "Change existing images instead of generating from scratch - fix details, expand canvas, or make stylistic changes"
+---
+
+The Edit Tool lets you change existing images instead of generating from scratch. You can fix details, expand the canvas, or make stylistic changes while keeping most of your original image intact.
+
+## Main Features
+
+<CardGroup cols={3}>
+  <Card title="Inpainting" icon="paintbrush">
+    Select a region of the image to replace with something new
+  </Card>
+  
+  <Card title="Outpainting" icon="expand">
+    Expand your image beyond its original borders
+  </Card>
+  
+  <Card title="Prompt Editing" icon="pencil">
+    Add or adjust details in the image with a new prompt
+  </Card>
+</CardGroup>
+
+## How Editing Works (Step by Step)
+
+<Steps>
+  <Step title="Open Edit Tool">
+    Open Edit from the left sidebar or by choosing **Send to Edit** on any image.
+  </Step>
+  
+  <Step title="Mask the Area">
+    Mask the area you want to modify. Use the brush size slider to be precise.
+  </Step>
+  
+  <Step title="Enter Prompt">
+    Enter a prompt describing the replacement or modification.
+  </Step>
+  
+  <Step title="Adjust Strength (Optional)">
+    Adjust strength to control how much the edit changes the original.
+  </Step>
+  
+  <Step title="Generate">
+    Click Generate to see results.
+  </Step>
+  
+  <Step title="Select and Save">
+    Select your favorite output, then download, save to Assets, or send to another tool.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/edit-before-after-comparison.png" alt="Side-by-side comparison of original and edited image" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Side-by-side comparison of original and edited image
+</Note>
+
+## Example Uses
+
+<AccordionGroup>
+  <Accordion title="Background Changes">
+    **Change the background of a portrait**
+    
+    - Mask the background area
+    - Prompt: "sunset beach background" or "modern office interior"
+    - Perfect for professional headshots or creative portraits
+  </Accordion>
+  
+  <Accordion title="Object Replacement">
+    **Replace objects (e.g., swap a shirt for a jacket)**
+    
+    - Mask the clothing item
+    - Prompt: "black leather jacket" or "formal business suit"
+    - Great for fashion and product variations
+  </Accordion>
+  
+  <Accordion title="Object Removal">
+    **Remove unwanted items**
+    
+    - Mask the unwanted object
+    - Use Erase mode or prompt for background fill
+    - Clean up photos and compositions
+  </Accordion>
+  
+  <Accordion title="Adding Elements">
+    **Add new props or scenery**
+    
+    - Mask an empty area
+    - Prompt: "add sunglasses" or "place a coffee cup on the table"
+    - Enhance compositions with new elements
+  </Accordion>
+</AccordionGroup>
+
+## Main Components
+
+<CardGroup cols={2}>
+  <Card title="Upload/Select Image" icon="upload">
+    Start with an image you've generated in Krea or upload your own
+  </Card>
+  
+  <Card title="Mask Brush" icon="paintbrush">
+    Paint over the part of the image you want to change
+  </Card>
+  
+  <Card title="Prompt Box" icon="pencil">
+    Describe what should replace the masked area (e.g., "add sunglasses" or "change background to sunset beach")
+  </Card>
+  
+  <Card title="Erase Mode" icon="eraser">
+    Remove objects entirely without adding replacements
+  </Card>
+  
+  <Card title="Settings Panel" icon="sliders">
+    Adjust model choice, guidance strength, resolution, and variations
+  </Card>
+  
+  <Card title="Generate Button" icon="play">
+    Apply your edit and preview results
+  </Card>
+  
+  <Card title="Result Actions" icon="download">
+    Save, download, retry, or send the edited image to other tools (Enhancer, Image, etc.)
+  </Card>
+</CardGroup>
+
+## Editing Modes Explained
+
+### Inpainting
+
+<Accordion title="Inpainting - Replace Specific Areas">
+  **How it works:** Mask a specific region and describe what should replace it.
+  
+  **Best for:**
+  - Changing specific objects or details
+  - Fixing imperfections or unwanted elements
+  - Swapping clothing, accessories, or props
+  - Modifying facial features or expressions
+  
+  **Tips:**
+  - Use precise masking for better results
+  - Be specific in your prompts
+  - Adjust strength to control how much change occurs
+</Accordion>
+
+### Outpainting
+
+<Accordion title="Outpainting - Expand Your Canvas">
+  **How it works:** Extend your image beyond its current borders by generating new content.
+  
+  **Best for:**
+  - Creating wider landscapes or scenes
+  - Adding more context to cropped images
+  - Expanding portraits to include more background
+  - Converting square images to different aspect ratios
+  
+  **Tips:**
+  - Describe what should appear in the new areas
+  - Consider the existing composition when expanding
+  - Use consistent lighting and style prompts
+</Accordion>
+
+### Prompt Editing
+
+<Accordion title="Prompt Editing - Global Modifications">
+  **How it works:** Apply changes across the entire image or large areas using text prompts.
+  
+  **Best for:**
+  - Changing overall style or mood
+  - Adjusting lighting conditions
+  - Modifying color schemes
+  - Adding atmospheric effects
+  
+  **Tips:**
+  - Use broader, descriptive prompts
+  - Experiment with strength settings
+  - Consider the original image's characteristics
+</Accordion>
+
+## Available Models for Editing
+
+<AccordionGroup>
+  <Accordion title="Flux">
+    **General editing with strong control for inpainting/outpainting.**
+    
+    **Best for:** Versatile editing tasks, reliable results
+    **Strengths:** Good balance of quality and speed
+  </Accordion>
+  
+  <Accordion title="Qwen Image Edit">
+    **Alibaba's advanced model for precise image modifications.**
+    
+    **Best for:** Detailed, precise edits
+    **Strengths:** High accuracy in object replacement and modification
+  </Accordion>
+  
+  <Accordion title="Flux Kontext Dev">
+    **Frontier model for flexible prompt-driven edits.**
+    
+    **Best for:** Experimental and creative editing approaches
+    **Strengths:** Advanced prompt understanding and interpretation
+  </Accordion>
+  
+  <Accordion title="Flux Kontext Pro">
+    **Fast edits with character consistency and local adjustments.**
+    
+    **Best for:** Character-focused edits, quick turnaround
+    **Strengths:** Maintains character consistency across edits
+  </Accordion>
+  
+  <Accordion title="Flux Kontext Max">
+    **Maximum performance; best for prompt adherence and typography edits.**
+    
+    **Best for:** Text editing, high-precision modifications
+    **Strengths:** Excellent prompt adherence, typography handling
+  </Accordion>
+  
+  <Accordion title="ChatGPT Image">
+    **OpenAI's advanced editing model.**
+    
+    **Best for:** Complex scene understanding and logical edits
+    **Strengths:** Advanced reasoning about image content and context
+  </Accordion>
+  
+  <Accordion title="SeedEdit">
+    **Frontier model for experimental editing approaches.**
+    
+    **Best for:** Creative and experimental edits
+    **Strengths:** Novel editing techniques and artistic modifications
+  </Accordion>
+  
+  <Accordion title="Ideogram">
+    **Specialized for inpainting and text-focused edits.**
+    
+    **Best for:** Text editing, graphic design modifications
+    **Strengths:** Excellent text rendering and graphic design elements
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+**Note:** Each model supports different editing modes. For example, Flux and Ideogram allow inpainting, while Kontext models focus more on prompt editing.
+</Info>
+
+## Model Selection Guide
+
+<div className="flex justify-center items-center w-full my-8">
+  <div className="w-full max-w-5xl mx-auto">
+
+| Model | **Best For** | **Editing Modes** | **Speed** |
+|-------|:------------:|:-----------------:|:---------:|
+| **Flux** | General editing | Inpainting, Outpainting | Medium |
+| **Qwen Image Edit** | Precise modifications | Inpainting, Prompt editing | Medium |
+| **Flux Kontext Dev** | Experimental edits | Prompt editing | Medium |
+| **Flux Kontext Pro** | Character consistency | Inpainting, Prompt editing | Fast |
+| **Flux Kontext Max** | Typography & precision | All modes | Slow |
+| **ChatGPT Image** | Complex scenes | All modes | Medium |
+| **SeedEdit** | Creative experiments | Inpainting, Prompt editing | Medium |
+| **Ideogram** | Text & graphics | Inpainting | Fast |
+
+  </div>
+</div>
+
+## Advanced Editing Techniques
+
+### Layered Editing
+
+<Steps>
+  <Step title="Start with Base Edit">
+    Make your primary modification first
+  </Step>
+  
+  <Step title="Send to Edit Again">
+    Use "Send to Edit" on your result for additional changes
+  </Step>
+  
+  <Step title="Refine Details">
+    Make smaller, more precise adjustments
+  </Step>
+  
+  <Step title="Final Polish">
+    Send to Enhancer for upscaling or quality improvements
+  </Step>
+</Steps>
+
+### Masking Best Practices
+
+<AccordionGroup>
+  <Accordion title="Precise Masking">
+    - **Use appropriate brush sizes** for different areas
+    - **Follow object boundaries** closely for clean results
+    - **Avoid over-masking** - only select what needs to change
+    - **Use feathered edges** for natural blending
+  </Accordion>
+  
+  <Accordion title="Strategic Masking">
+    - **Include context areas** when replacing objects
+    - **Mask shadows and reflections** when removing objects
+    - **Consider lighting consistency** across masked regions
+    - **Test different mask sizes** for optimal results
+  </Accordion>
+</AccordionGroup>
+
+### Prompt Optimization
+
+<AccordionGroup>
+  <Accordion title="Specific Prompts">
+    **Good:** "replace with red leather jacket"
+    
+    **Better:** "red leather jacket with silver zippers, worn casually"
+    
+    **Best:** "red leather jacket with silver zippers, worn casually, matching the existing lighting and pose"
+  </Accordion>
+  
+  <Accordion title="Style Consistency">
+    - **Match the original image style** in your prompts
+    - **Maintain lighting consistency** with descriptive terms
+    - **Consider the image's aesthetic** when adding new elements
+    - **Use style modifiers** like "in the same art style" or "matching the original aesthetic"
+  </Accordion>
+</AccordionGroup>
+
+## Workflow Integration
+
+### From Other Tools to Edit
+
+<CardGroup cols={3}>
+  <Card title="From Image Tool" icon="image">
+    Generate base images, then refine details in Edit
+  </Card>
+  
+  <Card title="From Real-time" icon="bolt">
+    Quick concepts in Real-time, detailed edits in Edit Tool
+  </Card>
+  
+  <Card title="From Assets" icon="folder">
+    Edit any previously generated or uploaded image
+  </Card>
+</CardGroup>
+
+### From Edit to Other Tools
+
+<CardGroup cols={3}>
+  <Card title="To Enhancer" icon="sparkles">
+    Upscale edited images for final quality
+  </Card>
+  
+  <Card title="To Image Tool" icon="image">
+    Use edited images as references for new generations
+  </Card>
+  
+  <Card title="To Video Tool" icon="video">
+    Use edited images as start frames for videos
+  </Card>
+</CardGroup>
+
+## Common Use Cases
+
+<AccordionGroup>
+  <Accordion title="Portrait Enhancement">
+    - Remove blemishes or unwanted elements
+    - Change backgrounds for professional shots
+    - Adjust lighting and mood
+    - Add or remove accessories
+  </Accordion>
+  
+  <Accordion title="Product Photography">
+    - Change product colors or materials
+    - Swap backgrounds for different contexts
+    - Remove or add product features
+    - Create variations for A/B testing
+  </Accordion>
+  
+  <Accordion title="Creative Compositing">
+    - Combine elements from different images
+    - Create surreal or artistic modifications
+    - Add fantasy or sci-fi elements
+    - Transform realistic images into artistic styles
+  </Accordion>
+  
+  <Accordion title="Content Creation">
+    - Customize stock images for specific needs
+    - Create variations of existing content
+    - Fix composition issues in generated images
+    - Adapt images for different platforms or formats
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Inconsistent Lighting">
+    **Problem:** New elements don't match the original lighting
+    
+    **Solutions:**
+    - Include lighting descriptions in prompts
+    - Use "matching the existing lighting" in your prompt
+    - Try different models that handle lighting better
+    - Consider the light source direction and intensity
+  </Accordion>
+  
+  <Accordion title="Poor Blending">
+    **Problem:** Edited areas look obviously artificial
+    
+    **Solutions:**
+    - Adjust mask edges for smoother transitions
+    - Lower the strength setting for subtler changes
+    - Include more context in your masking
+    - Try different models for better blending capabilities
+  </Accordion>
+  
+  <Accordion title="Unwanted Changes">
+    **Problem:** The edit changed more than intended
+    
+    **Solutions:**
+    - Use more precise masking
+    - Lower the strength setting
+    - Be more specific in your prompts
+    - Try a different model with better control
+  </Accordion>
+</AccordionGroup>
+
+## Tutorials & Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Workflows" icon="book" href="/tutorials">
+    For workflows, see the Tutorials section
+  </Card>
+  
+  <Card title="Tips & Tricks" icon="lightbulb" href="/tutorials/tips-tricks">
+    For prompt tips and advanced tricks
+  </Card>
+</CardGroup>
+
+## Related Tools
+
+<CardGroup cols={4}>
+  <Card title="Image Tool" icon="image" href="/tools/image">
+    Generate base images for editing
+  </Card>
+  
+  <Card title="Enhancer" icon="sparkles" href="/tools/enhancer">
+    Upscale and polish edited images
+  </Card>
+  
+  <Card title="Real-time" icon="bolt" href="/tools/realtime">
+    Quick ideation before detailed editing
+  </Card>
+  
+  <Card title="Train Tool" icon="brain" href="/tools/train">
+    Apply trained styles during editing
+  </Card>
+</CardGroup>

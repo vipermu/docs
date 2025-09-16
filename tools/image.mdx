@@ -1,0 +1,400 @@
+---
+title: "Image Tool"
+description: "Krea's main workspace for generating still images with AI"
+---
+
+The Image Tool is Krea's main workspace for generating still images with AI. It combines flexibility and power, letting you design from scratch, guide outputs with references, and reach ultra-high resolutions.
+
+## Main Components
+
+<CardGroup cols={2}>
+  <Card title="Prompt Box" icon="pencil">
+    Type the description of what you want to generate
+  </Card>
+  
+  <Card title="Prompt Settings" icon="sliders">
+    Adjust model, resolution, aspect ratio, and Raw toggle
+  </Card>
+  
+  <Card title="Styles" icon="palette">
+    Apply or create a style for consistency
+  </Card>
+  
+  <Card title="Asset Manager" icon="folder">
+    View and organize your generated assets (top panel)
+  </Card>
+  
+  <Card title="Generate Button" icon="play">
+    Run the prompt and create images
+  </Card>
+  
+  <Card title="Download Options" icon="download">
+    Save images to your device
+  </Card>
+  
+  <Card title="Send to Tools" icon="arrow-right">
+    Send results directly to Edit, Enhancer, or other tools
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/image-tool-interface.png" alt="Image Tool interface with key components labeled" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Image Tool interface with key components labeled
+</Note>
+
+## Detailed Breakdown
+
+### Prompt Box
+
+<Steps>
+  <Step title="Write Your Prompt">
+    Write your prompt to describe the image you want.
+  </Step>
+  
+  <Step title="Upload Reference (Optional)">
+    You can also upload an image reference (start frame) and/or apply an image style to guide the generation.
+  </Step>
+  
+  <Step title="Combine Inputs">
+    Combine text + image inputs for stronger control.
+  </Step>
+  
+  <Step title="Generate">
+    Once ready, click Generate.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/prompt-box-options.png" alt="Prompt box with text + image prompt option" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Prompt box with text + image prompt option
+</Note>
+
+### Prompt Settings (General)
+
+All models share the same core setup when generating images:
+
+<Accordion title="Core Settings">
+  - **Prompt box** — type a text description of what you want to create
+  - **Generate button** — run the prompt to produce results
+</Accordion>
+
+Depending on the model you select, you may also see extra options:
+
+<AccordionGroup>
+  <Accordion title="Aspect Ratio">
+    Available ratios: 1:1, 2:3, 16:9, etc.
+    
+    **Available in:** KREA-1, FLUX, Runway Gen 4, Imagen series
+  </Accordion>
+  
+  <Accordion title="Image Prompt or Reference">
+    Upload reference images to guide generation
+    
+    **Available in:** WAN 2.2, Seedream 3, Flux Kontext Pro, GPT Image
+  </Accordion>
+  
+  <Accordion title="Style or Presets">
+    Apply predefined or custom styles
+    
+    **Available in:** KREA-1, FLUX 1.1 Pro, Ideogram 3.0
+  </Accordion>
+  
+  <Accordion title="Resolution Selector">
+    Up to 4K base generation
+    
+    **Available in:** KREA-1, FLUX Pro/Ultra, Imagen 4
+  </Accordion>
+  
+  <Accordion title="Raw Toggle">
+    Enable less filtered outputs
+    
+    **Available in:** KREA-1, FLUX family
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+These extra settings vary per model. Check the **Model Selector** section below for a complete breakdown of each model's capabilities.
+</Info>
+
+<Frame>
+  <img src="/images/tools/prompt-settings-panel.png" alt="Prompt settings panel" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Prompt settings panel
+</Note>
+
+## Styles
+
+Styles let you guide the look and feel of your generations. They can speed up experimentation or ensure visual consistency.
+
+<CardGroup cols={3}>
+  <Card title="Krea Default Styles" icon="star">
+    A set of built-in looks you can apply instantly
+  </Card>
+  
+  <Card title="Community Styles" icon="users">
+    Explore styles created and shared by other users
+  </Card>
+  
+  <Card title="Custom Styles" icon="brush">
+    Train your own style for brand consistency or long-term projects
+  </Card>
+</CardGroup>
+
+<Warning>
+**Note:** Styles are not supported by every model.
+
+Currently, styles are available in models such as **KREA-1**, **FLUX 1.1 Pro / Ultra**, and **Ideogram 3.0**. Other models (like Imagen, Runway Gen 4, or Qwen) don't include style options.
+</Warning>
+
+<Frame>
+  <img src="/images/tools/styles-menu.png" alt="Styles menu with default / community / custom tabs" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Styles menu with default / community / custom tabs
+</Note>
+
+## Assets
+
+<Steps>
+  <Step title="Access Assets">
+    Access from the top bar or left menu.
+  </Step>
+  
+  <Step title="Automatic Storage">
+    All your generated images are stored automatically.
+  </Step>
+  
+  <Step title="Organize & Send">
+    Organize, browse, and send assets into other tools (Edit, Enhancer, Realtime).
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/assets-library.png" alt="Assets library with saved generations" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Assets library with saved generations
+</Note>
+
+## Downloads & Actions
+
+When you select an image, you'll see additional actions:
+
+<AccordionGroup>
+  <Accordion title="Enhancement Actions">
+    - **Upscale** → Improve resolution and quality
+    - **Vary** → Create variations of the image
+  </Accordion>
+  
+  <Accordion title="File Actions">
+    - **Download** → Save locally
+    - **Retry** → Re-run the same prompt
+    - **Reuse parameters** → Start a new generation with the same settings
+  </Accordion>
+  
+  <Accordion title="Sharing Actions">
+    - **Share parameters** → Share your prompt + settings with others
+    - **Publish** → Post to the Krea Gallery
+  </Accordion>
+  
+  <Accordion title="Organization Actions">
+    - **Delete** → Remove the image
+    - **Like / Dislike / Favorite** → Personal organization and feedback
+  </Accordion>
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/tools/actions-menu.png" alt="Actions menu (upscale, vary, download, publish, delete, etc.)" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Actions menu (upscale, vary, download, publish, delete, etc.)
+</Note>
+
+## Prompt Settings Categories
+
+Settings depend on the model you select. They can be grouped into:
+
+<CardGroup cols={3}>
+  <Card title="General Settings" icon="sliders">
+    Resolution, format, Raw, styles
+  </Card>
+  
+  <Card title="Open-Source Models" icon="code">
+    Often include experimental or lightweight options
+  </Card>
+  
+  <Card title="Model-Specific Settings" icon="cog">
+    Unique controls (e.g., Ideogram's character consistency, Imagen's text rendering)
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/prompt-settings-expanded.png" alt="Prompt settings panel expanded" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Prompt settings panel expanded
+</Note>
+
+## Available Models
+
+### Model Selector
+
+The Model Selector lets you choose which AI model to use when generating images. Each model is tuned for different strengths — realism, typography, stylistic control, or speed.
+
+<Steps>
+  <Step title="Open Model Dropdown">
+    Open the Model dropdown in the Image Tool.
+  </Step>
+  
+  <Step title="Select Model">
+    Pick a model that fits your needs (e.g., realism vs. design).
+  </Step>
+  
+  <Step title="Check Settings">
+    The Prompt Settings panel updates to show the options supported by that model.
+  </Step>
+</Steps>
+
+### In-House & Flux Family
+
+<Accordion title="Krea 1">
+  Krea's native flagship model designed to remove the "AI look." Delivers realistic textures, expressive color, and flexible styles. Generates quickly (around 8 seconds) and supports up to 4K base resolution.
+  
+  **Prompt settings include:** prompt box, aspect ratio, resolution, image prompt, styles, and Raw toggle.
+  
+  [Learn more →](/ai-models/krea-1)
+</Accordion>
+
+<Accordion title="Flux Family">
+  Flux models focus on style control and aesthetics. They balance realism with a strong artistic look, offering flexibility for design and concept art. Kontext models are designed for composite and editing workflows.
+  
+  **Prompt settings include:** prompt box, aspect ratio, resolution, image prompt, styles, and (in some cases) Raw toggle.
+  
+  **Models:**
+  - **Flux 1.1 Pro** — Enhanced, efficient model for everyday use
+  - **Flux 1.1 Pro Ultra** — Highest visual fidelity in the Flux lineup
+  - **Flux Kontext** — Advanced tool for image editing workflows
+  - **Flux Kontext Pro** — Pro-tier editing model with optimal coherence
+  
+  [Learn more →](/ai-models/flux)
+</Accordion>
+
+### Open-Source
+
+<Accordion title="Flux.1 Krea">
+  A distilled version of Krea 1, available with open-source weights.
+  
+  [Learn more →](/ai-models/flux-krea)
+</Accordion>
+
+### Third-Party & Specialty Models
+
+<AccordionGroup>
+  <Accordion title="WAN 2.2">
+    Strong prompt fidelity with ultra-realistic textures and natural rendering.
+    
+    **Prompt settings include:** prompt box, aspect ratio, and image prompt.
+    
+    [Learn more →](/ai-models/wan)
+  </Accordion>
+  
+  <Accordion title="Ideogram 3.0">
+    Specialized in graphic design and typography. Known for producing consistent, legible text and bold flat-art styles, making it ideal for branding and poster work.
+    
+    **Prompt settings include:** prompt box, aspect ratio, styles, and character consistency toggle.
+    
+    [Learn more →](/ai-models/ideogram)
+  </Accordion>
+  
+  <Accordion title="Imagen Series">
+    Google's models are built for sharp photorealism, clean detail, and excellent text rendering. They are well-suited for posters, UI elements, and in-image typography.
+    
+    **Prompt settings include:** prompt box, aspect ratio, and resolution.
+    
+    **Models:**
+    - **Imagen 3** — Previous generation
+    - **Imagen 4** — Current flagship version
+    - **Imagen 4 Fast** — Quick rendering variant
+    - **Imagen 4 Ultra** — Maximum quality output
+    
+    [Learn more →](/ai-models/imagen)
+  </Accordion>
+  
+  <Accordion title="ChatGPT Image">
+    Blends reasoning and creativity. Strong at building complex, logical scenes and storytelling compositions.
+    
+    **Prompt settings include:** prompt box and image prompt.
+    
+    [Learn more →](/ai-models/chatgpt-image)
+  </Accordion>
+  
+  <Accordion title="Runway Gen-4">
+    Cinematic-focused model that excels at consistent characters, dramatic lighting, and coherent scene composition. Great for concept art and narrative visuals.
+    
+    **Prompt settings include:** prompt box, aspect ratio, and image prompt.
+    
+    [Learn more →](/ai-models/runway-gen4)
+  </Accordion>
+  
+  <Accordion title="Qwen">
+    Versatile model that performs well on prompt adherence and flexible creative outputs.
+    
+    **Prompt settings include:** prompt box only.
+    
+    [Learn more →](/ai-models/qwen)
+  </Accordion>
+  
+  <Accordion title="Seedream 3">
+    Fast, vibrant model that generates high-quality images with vivid color palettes.
+    
+    **Prompt settings include:** prompt box, aspect ratio, and image prompt.
+    
+    [Learn more →](/ai-models/seedream)
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+**Note on Prompt Settings**
+
+Not all models support the same features. Some (like KREA-1 and Flux Pro) allow advanced controls such as resolution, styles, and Raw, while others (like Qwen) only provide a basic prompt box. Always check the Prompt Settings panel after selecting a model to see what's available.
+</Warning>
+
+## Tutorials & Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Workflows" icon="book" href="/tutorials">
+    For workflows, see the Tutorials section
+  </Card>
+  
+  <Card title="Tips & Tricks" icon="lightbulb" href="/tutorials/tips-tricks">
+    For prompt tips and advanced tricks
+  </Card>
+</CardGroup>
+
+## Related Tools
+
+<CardGroup cols={3}>
+  <Card title="Video Tool" icon="video" href="/tools/video">
+    Generate videos and motion content
+  </Card>
+  
+  <Card title="Enhancer" icon="sparkles" href="/tools/enhancer">
+    Upscale and enhance your images
+  </Card>
+  
+  <Card title="Edit Tool" icon="edit" href="/tools/edit">
+    Advanced image editing and compositing
+  </Card>
+</CardGroup>

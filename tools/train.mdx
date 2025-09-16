@@ -1,0 +1,391 @@
+---
+title: "Train Tool"
+description: "Teach Krea how to recognize a character, style, or object for consistent reuse across projects"
+---
+
+The Train Tool lets you teach Krea how to recognize a character, style, or object so you can reuse it in infinite new images and videos. This is useful for product photography, consistent characters, or keeping a unique style across projects.
+
+## How It Works
+
+<Steps>
+  <Step title="Open Train Tool">
+    Open Train from the main menu.
+  </Step>
+  
+  <Step title="Start New Training">
+    Click **Train a new model**.
+  </Step>
+  
+  <Step title="Upload Images">
+    Upload a set of images (clear, well-lit examples work best).
+  </Step>
+  
+  <Step title="Choose Training Type">
+    Choose what you're training:
+    - **Character** → For people, mascots, or recurring figures
+    - **Style** → For a look you want to apply (like a filter)
+    - **Object** → For items like products, props, or logos
+  </Step>
+  
+  <Step title="Name and Train">
+    Name your model and start training — it only takes a few minutes.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/tools/train-new-model-panel.png" alt="Train a new model panel" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** "Train a new model" panel
+</Note>
+
+## Using Your Trained Models
+
+Once training is complete, your new style will appear in your **Assets → Trained models** list. You can then apply it in different tools:
+
+<CardGroup cols={2}>
+  <Card title="Image Tool (Flux)" icon="image">
+    Use as a style reference when generating new images
+  </Card>
+  
+  <Card title="Edit Mode" icon="edit">
+    Apply it as guidance for modifications
+  </Card>
+  
+  <Card title="Enhancer" icon="sparkles">
+    Use it during upscaling to keep a consistent aesthetic
+  </Card>
+  
+  <Card title="Video Tool" icon="video">
+    Apply it to influence the look and style of videos
+  </Card>
+</CardGroup>
+
+<Info>
+**Important:** Trained styles are not standalone "base models." They act as style layers that can be applied across supported tools.
+</Info>
+
+## Training Interface
+
+When you open the Train Tool, you'll see:
+
+### Main Components
+
+<AccordionGroup>
+  <Accordion title="Train a New Model">
+    Upload images of a character, style, or object you want to train. Krea will analyze them and create a reusable style in a few minutes.
+  </Accordion>
+  
+  <Accordion title="Trained Models List">
+    Below, you'll find all your trained models, shown with thumbnails.
+  </Accordion>
+  
+  <Accordion title="Filters (Top Bar)">
+    - **Date created** → Sort your models by newest or oldest
+    - **All Models** → Filter trained models based on the base model used (Krea1, Flux, Wan 2.1, Wan 2.2, Qwen, Flux Realtime)
+    - **Visibility** → Choose between visible or hidden trained models
+  </Accordion>
+  
+  <Accordion title="Search Bar">
+    Quickly find a trained model by name.
+  </Accordion>
+</AccordionGroup>
+
+### Model Card Information
+
+Each trained model card shows:
+
+<CardGroup cols={2}>
+  <Card title="Preview Thumbnail" icon="image">
+    A sample image of what the style looks like
+  </Card>
+  
+  <Card title="Custom Name" icon="tag">
+    The custom name you gave it (e.g., "Wooden Sunglasses MEN")
+  </Card>
+  
+  <Card title="Base Model" icon="cpu">
+    Which model the training is built on (e.g., Flux)
+  </Card>
+  
+  <Card title="Usage Count" icon="chart-bar">
+    How many times you've applied it in generations
+  </Card>
+</CardGroup>
+
+<Frame>
+  <img src="/images/tools/train-interface-full.png" alt="Train a new model panel with all options visible" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** "Train a new model" panel with all options visible
+</Note>
+
+## Model Options for Training
+
+When you train, you'll first select a base model. This defines how your character, style, or object will learn and generate.
+
+<AccordionGroup>
+  <Accordion title="Krea1">
+    **Krea's native model.** Balanced and reliable for most training cases.
+    
+    **Best for:** General use, great if you're unsure where to start
+  </Accordion>
+  
+  <Accordion title="Flux">
+    **Strong model for style fidelity and creative looks.** 
+    
+    **Best for:** Modern and polished outputs with strong style consistency
+  </Accordion>
+  
+  <Accordion title="Wan 2.1">
+    **Earlier open-source model.** Lightweight and useful for experiments.
+    
+    **Best for:** Quick tests and experimentation
+  </Accordion>
+  
+  <Accordion title="Wan 2.2">
+    **Improved Wan with sharper details and better generalization.**
+    
+    **Best for:** More stable results than Wan 2.1
+  </Accordion>
+  
+  <Accordion title="Qwen">
+    **Flexible open-source option.**
+    
+    **Best for:** Variety and experimentation with different approaches
+  </Accordion>
+  
+  <Accordion title="Flux Realtime">
+    **Optimized for live use.**
+    
+    **Best for:** Real-time applications (webcam or live prompts)
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+**Note:** Once trained, your model can be applied across images, videos, or published content.
+</Info>
+
+<Frame>
+  <img src="/images/tools/model-selection-list.png" alt="Model list" />
+</Frame>
+
+<Note>
+**Screenshot placeholder:** Model list
+</Note>
+
+## Training Types Explained
+
+### Character Training
+
+<Accordion title="Character Training Best Practices">
+  **Purpose:** Create consistent people, mascots, or recurring figures
+  
+  **Tips:**
+  - Keep poses and lighting varied but consistent in subject
+  - Include different angles and expressions
+  - Maintain consistent character features
+  - Use 15-25 high-quality images for best results
+</Accordion>
+
+### Style Training
+
+<Accordion title="Style Training Best Practices">
+  **Purpose:** Create a reusable visual aesthetic or filter
+  
+  **Tips:**
+  - Focus on consistent visual elements (colors, textures, lighting)
+  - Include varied subjects with the same style treatment
+  - Ensure consistent artistic approach across all images
+  - Works well for artistic styles, photography filters, or brand aesthetics
+</Accordion>
+
+### Object Training
+
+<Accordion title="Object Training Best Practices">
+  **Purpose:** Train recognition of products, props, or logos
+  
+  **Tips:**
+  - Upload clean, uncluttered backgrounds
+  - Show the object from multiple angles
+  - Maintain consistent lighting and quality
+  - Perfect for product photography and branding
+</Accordion>
+
+## Training Workflow
+
+### Preparation Phase
+
+<Steps>
+  <Step title="Gather Images">
+    Collect 10-20 high-quality images of your subject
+  </Step>
+  
+  <Step title="Quality Check">
+    Ensure images are clear, well-lit, and consistent
+  </Step>
+  
+  <Step title="Choose Base Model">
+    Select the base model that best fits your intended use
+  </Step>
+</Steps>
+
+### Training Phase
+
+<Steps>
+  <Step title="Upload & Configure">
+    Upload your images and configure training settings
+  </Step>
+  
+  <Step title="Wait for Processing">
+    Training typically takes just a few minutes
+  </Step>
+  
+  <Step title="Review Results">
+    Check the generated preview thumbnail
+  </Step>
+</Steps>
+
+### Application Phase
+
+<Steps>
+  <Step title="Find Your Model">
+    Locate your trained model in the Assets → Trained models list
+  </Step>
+  
+  <Step title="Apply in Tools">
+    Use your trained model across Image, Video, Edit, and Enhancer tools
+  </Step>
+  
+  <Step title="Iterate & Refine">
+    Generate content and refine your approach based on results
+  </Step>
+</Steps>
+
+## Best Practices for Training Success
+
+<AccordionGroup>
+  <Accordion title="Image Quality">
+    - **Use high-resolution images** (at least 512x512)
+    - **Ensure good lighting** and clear details
+    - **Avoid blurry or pixelated images**
+    - **Remove distracting backgrounds** when possible
+  </Accordion>
+  
+  <Accordion title="Dataset Diversity">
+    - **Include varied poses/angles** for characters
+    - **Show different lighting conditions** 
+    - **Include multiple contexts** while maintaining consistency
+    - **Balance similarity with variety**
+  </Accordion>
+  
+  <Accordion title="Consistency Guidelines">
+    - **Maintain consistent subject identity**
+    - **Keep style elements uniform** across training images
+    - **Use similar image quality** throughout the dataset
+    - **Avoid mixing different art styles** in one training set
+  </Accordion>
+</AccordionGroup>
+
+## Notes for First-Time Users
+
+<Info>
+**Getting Started Tips:**
+
+- **Use at least 10–20 quality images** when training for best results
+- **For characters:** Keep poses and lighting varied but consistent in subject
+- **For products/objects:** Upload clean, uncluttered backgrounds
+- **Training works with supported base models** (Krea1, Flux, Wan, Qwen, Flux Realtime). Results depend on the base model chosen
+</Info>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Poor Training Results">
+    **Possible causes:**
+    - Insufficient or low-quality training images
+    - Inconsistent subjects across the dataset
+    - Wrong base model selection for your use case
+    
+    **Solutions:**
+    - Add more high-quality, consistent images
+    - Retrain with a different base model
+    - Ensure better consistency in your training set
+  </Accordion>
+  
+  <Accordion title="Model Not Appearing in Tools">
+    **Check:**
+    - Training has completed successfully
+    - Model is set to "visible" in filters
+    - You're using a compatible tool (Image, Video, Edit, Enhancer)
+  </Accordion>
+  
+  <Accordion title="Inconsistent Application Results">
+    **Tips:**
+    - Adjust prompt strength when applying the model
+    - Try different base generation models
+    - Combine with specific text prompts for better guidance
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Training Strategies
+
+### Multi-Model Training
+
+<Tip>
+**Pro Strategy:** Train the same subject on different base models to see which works best for your specific use case. Each base model will interpret your training data differently.
+</Tip>
+
+### Iterative Improvement
+
+<Steps>
+  <Step title="Initial Training">
+    Start with your best 10-15 images
+  </Step>
+  
+  <Step title="Test & Evaluate">
+    Generate content using your trained model
+  </Step>
+  
+  <Step title="Refine Dataset">
+    Add more images or remove problematic ones based on results
+  </Step>
+  
+  <Step title="Retrain">
+    Create an improved version of your model
+  </Step>
+</Steps>
+
+## Tutorials & Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Workflows" icon="book" href="/tutorials">
+    For workflows, see the Tutorials section
+  </Card>
+  
+  <Card title="Tips & Tricks" icon="lightbulb" href="/tutorials/tips-tricks">
+    For prompt tips and advanced tricks
+  </Card>
+</CardGroup>
+
+## Related Tools
+
+<CardGroup cols={4}>
+  <Card title="Image Tool" icon="image" href="/tools/image">
+    Apply trained models in image generation
+  </Card>
+  
+  <Card title="Video Tool" icon="video" href="/tools/video">
+    Use trained styles in video creation
+  </Card>
+  
+  <Card title="Edit Tool" icon="edit" href="/tools/edit">
+    Apply trained models during editing
+  </Card>
+  
+  <Card title="Enhancer" icon="sparkles" href="/tools/enhancer">
+    Maintain trained aesthetics during upscaling
+  </Card>
+</CardGroup>
